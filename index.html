@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mark-Sheet Style Questionnaire</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section with preQ -->
+  <header>
+    <div id="preq-container">
+      
+      <p id="preq-text">過去1か月間を振り返って、平均的にあてはまるもの1つを選んでください。</p>
+    </div>
+  </header>
+
+  <!-- Progress Bar -->
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <!-- Questionnaire Container -->
+  <div id="questionnaire-container">
+    <!-- Page 1: Questions 1-10 -->
+    <form id="questionnaire-page-1" class="questionnaire-page active">
+      <!-- Questions 1 to 10 -->
+
+      <!-- Question 1 -->
+      <div class="question" id="question-1"><p>果物をどのくらいの頻度で食べますか。(果物ジュースは除く)</p><div class="options"><label><input type="radio" name="q1" value="0"> 食べなかった</label><label><input type="radio" name="q1" value="1"> 週1回未満</label><label><input type="radio" name="q1" value="2"> 週1回</label><label><input type="radio" name="q1" value="3"> 週2-3回</label><label><input type="radio" name="q1" value="4"> 週4-6回</label><label><input type="radio" name="q1" value="5"> 1日1回</label><label><input type="radio" name="q1" value="6"> 1日2回</label><label><input type="radio" name="q1" value="7"> 1日3回以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-2"><p>1日にどのくらいの野菜を食べますか。(イモ類は除く)</p><p class="qsup">1皿の目安: ほうれん草のお浸し小鉢1つ分、サラダ片手に山盛り1杯 (1皿=野菜70 gくらい)</p><div class="options"><label><input type="radio" name="q2" value="0"> 食べなかった</label><label><input type="radio" name="q2" value="1"> 週1皿未満</label><label><input type="radio" name="q2" value="2"> 週1皿</label><label><input type="radio" name="q2" value="3"> 週2-3皿</label><label><input type="radio" name="q2" value="4"> 週4-6皿</label><label><input type="radio" name="q2" value="5"> 1日1皿</label><label><input type="radio" name="q2" value="6"> 1日2皿</label><label><input type="radio" name="q2" value="7"> 1日3皿以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-3"><p>全粒穀物をどのくらいの頻度で食べますか。</p><p class="qsup">例:玄米、雑穀米、もち麦ごはん、全粒粉入りのパン、そば、オートミールなどの食物繊維の多い穀物</p><div class="options"><label><input type="radio" name="q3" value="0"> 食べなかった</label><label><input type="radio" name="q3" value="1"> 週1回未満</label><label><input type="radio" name="q3" value="2"> 週1回</label><label><input type="radio" name="q3" value="3"> 週2-3回</label><label><input type="radio" name="q3" value="4"> 週4-6回</label><label><input type="radio" name="q3" value="5"> 1日1回</label><label><input type="radio" name="q3" value="6"> 1日2回</label><label><input type="radio" name="q3" value="7"> 1日3回以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-4"><p>牛乳、ヨーグルト、チーズなどの乳製品をどのくらい食べますか。</p><p class="qsup">1つ分の目安:牛乳コップ半分(100 mL)、ヨーグルト 100 g、プロセスチーズ1つ(1ピース)、スライスチーズ1枚</p><div class="options"><label><input type="radio" name="q4" value="0"> 食べなかった</label><label><input type="radio" name="q4" value="1"> 週1つ分未満</label><label><input type="radio" name="q4" value="2"> 週1つ分</label><label><input type="radio" name="q4" value="3"> 週2-3つ分</label><label><input type="radio" name="q4" value="4"> 週4-6つ分</label><label><input type="radio" name="q4" value="5"> 1日1つ分</label><label><input type="radio" name="q4" value="6"> 1日2つ分</label><label><input type="radio" name="q4" value="7"> 1日3つ分以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-5"><p>ナッツをどのくらいの頻度で食べますか。</p><div class="options"><label><input type="radio" name="q5" value="0"> 食べなかった</label><label><input type="radio" name="q5" value="1"> 週1回未満</label><label><input type="radio" name="q5" value="2"> 週1回</label><label><input type="radio" name="q5" value="3"> 週2-3回</label><label><input type="radio" name="q5" value="4"> 週4-6回</label><label><input type="radio" name="q5" value="5"> 1日1回</label><label><input type="radio" name="q5" value="6"> 1日2回</label><label><input type="radio" name="q5" value="7"> 1日3回以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-6"><p>豆類をどのくらいの頻度で食べますか。</p><p class="qsup">例:大豆製品(豆腐、納豆、豆乳)、大豆以外の豆類</p><div class="options"><label><input type="radio" name="q6" value="0"> 食べなかった</label><label><input type="radio" name="q6" value="1"> 週1回未満</label><label><input type="radio" name="q6" value="2"> 週1回</label><label><input type="radio" name="q6" value="3"> 週2-3回</label><label><input type="radio" name="q6" value="4"> 週4-6回</label><label><input type="radio" name="q6" value="5"> 1日1回</label><label><input type="radio" name="q6" value="6"> 1日2回</label><label><input type="radio" name="q6" value="7"> 1日3回以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-7"><p>ソーセージ、ハム、ベーコンなどの加工肉をどのくらいの頻度で食べますか。</p><div class="options"><label><input type="radio" name="q7" value="0"> 食べなかった</label><label><input type="radio" name="q7" value="1"> 週1回未満</label><label><input type="radio" name="q7" value="2"> 週1回</label><label><input type="radio" name="q7" value="3"> 週2-3回</label><label><input type="radio" name="q7" value="4"> 週4-6回</label><label><input type="radio" name="q7" value="5"> 1日1回</label><label><input type="radio" name="q7" value="6"> 1日2回</label><label><input type="radio" name="q7" value="7"> 1日3回以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-8"><p>牛肉、豚肉、羊肉をどのくらいの頻度で食べますか。(とり肉は除く)</p><div class="options"><label><input type="radio" name="q8" value="0"> 食べなかった</label><label><input type="radio" name="q8" value="1"> 週1回未満</label><label><input type="radio" name="q8" value="2"> 週1回</label><label><input type="radio" name="q8" value="3"> 週2-3回</label><label><input type="radio" name="q8" value="4"> 週4-6回</label><label><input type="radio" name="q8" value="5"> 1日1回</label><label><input type="radio" name="q8" value="6"> 1日2回</label><label><input type="radio" name="q8" value="7"> 1日3回以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-9"><p>魚をどのくらいの頻度で食べますか。</p><div class="options"><label><input type="radio" name="q9" value="0"> 食べなかった</label><label><input type="radio" name="q9" value="1"> 週1回未満</label><label><input type="radio" name="q9" value="2"> 週1回</label><label><input type="radio" name="q9" value="3"> 週2-3回</label><label><input type="radio" name="q9" value="4"> 週4-6回</label><label><input type="radio" name="q9" value="5"> 1日1回</label><label><input type="radio" name="q9" value="6"> 1日2回</label><label><input type="radio" name="q9" value="7"> 1日3回以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-10"><p>甘い飲み物をどのくらいの頻度で飲みますか。</p><p class="qsup">例:炭酸ジュース、スポーツドリンク、100%でない果物ジュース、乳酸菌飲料など 1杯の目安: 200 mL</p><div class="options"><label><input type="radio" name="q10" value="0"> 飲まなかった</label><label><input type="radio" name="q10" value="1"> 週1杯未満</label><label><input type="radio" name="q10" value="2"> 週1杯</label><label><input type="radio" name="q10" value="3"> 週2-3杯</label><label><input type="radio" name="q10" value="4"> 週4-6杯</label><label><input type="radio" name="q10" value="5"> 1日1杯</label><label><input type="radio" name="q10" value="6"> 1日2杯</label><label><input type="radio" name="q10" value="7"> 1日3杯以上</label></div>
+</div>
+<hr>
+
+      <!-- Navigation Buttons -->
+      <div class="navigation-buttons">
+        <button type="button" id="next-button-1">Next Questions</button>
+      </div>
+    </form>
+
+    <!-- Page 2: Questions 11-20 -->
+    <form id="questionnaire-page-2" class="questionnaire-page">
+      <!-- Questions 11 to 20 -->
+
+      <!-- Question 11 -->
+      <div class="page" id="page-2" style="display: none;">
+     <div class="question" id="question-11"><p>みそ汁、スープをどのくらいの頻度で飲みますか。</p><div class="options"><label><input type="radio" name="q11" value="0"> 飲まなかった</label><label><input type="radio" name="q11" value="1"> 週1杯未満</label><label><input type="radio" name="q11" value="2"> 週1杯</label><label><input type="radio" name="q11" value="3"> 週2-3杯</label><label><input type="radio" name="q11" value="4"> 週4-6杯</label><label><input type="radio" name="q11" value="5"> 1日1杯</label><label><input type="radio" name="q11" value="6"> 1日2杯</label><label><input type="radio" name="q11" value="7"> 1日3杯以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-12"><p>自宅で調理された食事の味付けは、外食など家庭以外で調理された食事と比べてどうですか。</p><div class="options"><label><input type="radio" name="q12" value="0"> 家庭で調理された食事を食べない</label><label><input type="radio" name="q12" value="1"> かなり薄味</label><label><input type="radio" name="q12" value="2"> やや薄味</label><label><input type="radio" name="q12" value="3"> 同じくらい</label><label><input type="radio" name="q12" value="4"> やや濃い味</label><label><input type="radio" name="q12" value="5"> かなり濃い味</label></div>
+</div>
+<hr>
+<div class="question" id="question-13"><p>ビール、発泡酒をどのくらいの頻度で飲みますか。</p><p class="qsup">1本（350ml程度）</p><div class="options"><label><input type="radio" name="q13" value="0"> 飲まなかった</label><label><input type="radio" name="q13" value="1"> 週1杯未満</label><label><input type="radio" name="q13" value="2"> 週1杯</label><label><input type="radio" name="q13" value="3"> 週2-3杯</label><label><input type="radio" name="q13" value="4"> 週4-6杯</label><label><input type="radio" name="q13" value="5"> 1日1杯</label><label><input type="radio" name="q13" value="6"> 1日2杯</label><label><input type="radio" name="q13" value="7"> 1日3杯以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-14"><p>チューハイ、焼酎をどのくらいの頻度で飲みますか。</p><p class="qsup">チューハイ 1本（350ml程度）/ 焼酎コップ1杯（100ml程度）</p><div class="options"><label><input type="radio" name="q14" value="0"> 飲まなかった</label><label><input type="radio" name="q14" value="1"> 週1杯未満</label><label><input type="radio" name="q14" value="2"> 週1杯</label><label><input type="radio" name="q14" value="3"> 週2-3杯</label><label><input type="radio" name="q14" value="4"> 週4-6杯</label><label><input type="radio" name="q14" value="5"> 1日1杯</label><label><input type="radio" name="q14" value="6"> 1日2杯</label><label><input type="radio" name="q14" value="7"> 1日3杯以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-15"><p>日本酒をどのくらいの頻度で飲みますか。</p><p class="qsup">1杯＝1合（180ml）</p><div class="options"><label><input type="radio" name="q15" value="0"> 飲まなかった</label><label><input type="radio" name="q15" value="1"> 週1杯未満</label><label><input type="radio" name="q15" value="2"> 週1杯</label><label><input type="radio" name="q15" value="3"> 週2-3杯</label><label><input type="radio" name="q15" value="4"> 週4-6杯</label><label><input type="radio" name="q15" value="5"> 1日1杯</label><label><input type="radio" name="q15" value="6"> 1日2杯</label><label><input type="radio" name="q15" value="7"> 1日3杯以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-16"><p>赤ワイン/白ワインをどのくらいの頻度で飲みますか。</p><p class="qsup">1杯＝ワイングラス1杯（120ml）</p><div class="options"><label><input type="radio" name="q16" value="0"> 飲まなかった</label><label><input type="radio" name="q16" value="1"> 週1杯未満</label><label><input type="radio" name="q16" value="2"> 週1杯</label><label><input type="radio" name="q16" value="3"> 週2-3杯</label><label><input type="radio" name="q16" value="4"> 週4-6杯</label><label><input type="radio" name="q16" value="5"> 1日1杯</label><label><input type="radio" name="q16" value="6"> 1日2杯</label><label><input type="radio" name="q16" value="7"> 1日3杯以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-17"><p>ジン、ウォッカ、テキーラ、ウィスキーをどのくらいの頻度で飲みますか。</p><p class="qsup">1杯＝シングル（原酒30ml、ハイボール1杯）</p><div class="options"><label><input type="radio" name="q17" value="0"> 飲まなかった</label><label><input type="radio" name="q17" value="1"> 週1杯未満</label><label><input type="radio" name="q17" value="2"> 週1杯</label><label><input type="radio" name="q17" value="3"> 週2-3杯</label><label><input type="radio" name="q17" value="4"> 週4-6杯</label><label><input type="radio" name="q17" value="5"> 1日1杯</label><label><input type="radio" name="q17" value="6"> 1日2杯</label><label><input type="radio" name="q17" value="7"> 1日3杯以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-18"><p>果実酒（梅酒など）をどのくらいの頻度で飲みますか。</p><p class="qsup">1杯＝シングル（原酒30ml）</p><div class="options"><label><input type="radio" name="q18" value="0"> 飲まなかった</label><label><input type="radio" name="q18" value="1"> 週1杯未満</label><label><input type="radio" name="q18" value="2"> 週1杯</label><label><input type="radio" name="q18" value="3"> 週2-3杯</label><label><input type="radio" name="q18" value="4"> 週4-6杯</label><label><input type="radio" name="q18" value="5"> 1日1杯</label><label><input type="radio" name="q18" value="6"> 1日2杯</label><label><input type="radio" name="q18" value="7"> 1日3杯以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-19"><p>ブラックコーヒー（カフェインあり/なし）をどのくらいの頻度で飲みますか。</p><p class="qsup">1杯 = 150ml程度</p><div class="options"><label><input type="radio" name="q19" value="0"> 飲まなかった</label><label><input type="radio" name="q19" value="1"> 週1杯未満</label><label><input type="radio" name="q19" value="2"> 週1杯</label><label><input type="radio" name="q19" value="3"> 週2-3杯</label><label><input type="radio" name="q19" value="4"> 週4-6杯</label><label><input type="radio" name="q19" value="5"> 1日1杯</label><label><input type="radio" name="q19" value="6"> 1日2杯</label><label><input type="radio" name="q19" value="7"> 1日3杯以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-20"><p>ブラックティー（紅茶）をどのくらいの頻度で飲みますか。</p><p class="qsup">1杯 = 150ml程度</p><div class="options"><label><input type="radio" name="q20" value="0"> 飲まなかった</label><label><input type="radio" name="q20" value="1"> 週1杯未満</label><label><input type="radio" name="q20" value="2"> 週1杯</label><label><input type="radio" name="q20" value="3"> 週2-3杯</label><label><input type="radio" name="q20" value="4"> 週4-6杯</label><label><input type="radio" name="q20" value="5"> 1日1杯</label><label><input type="radio" name="q20" value="6"> 1日2杯</label><label><input type="radio" name="q20" value="7"> 1日3杯以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-21"><p>（甘くない）緑茶をどのくらいの頻度で飲みますか。</p><p class="qsup">1杯 = 150ml程度</p><div class="options"><label><input type="radio" name="q21" value="0"> 飲まなかった</label><label><input type="radio" name="q21" value="1"> 週1杯未満</label><label><input type="radio" name="q21" value="2"> 週1杯</label><label><input type="radio" name="q21" value="3"> 週2-3杯</label><label><input type="radio" name="q21" value="4"> 週4-6杯</label><label><input type="radio" name="q21" value="5"> 1日1杯</label><label><input type="radio" name="q21" value="6"> 1日2杯</label><label><input type="radio" name="q21" value="7"> 1日3杯以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-22"><p>100%ジュースをどのくらいの頻度で飲みますか。</p><p class="qsup">1杯 = 150ml程度</p><div class="options"><label><input type="radio" name="q22" value="0"> 飲まなかった</label><label><input type="radio" name="q22" value="1"> 週1杯未満</label><label><input type="radio" name="q22" value="2"> 週1杯</label><label><input type="radio" name="q22" value="3"> 週2-3杯</label><label><input type="radio" name="q22" value="4"> 週4-6杯</label><label><input type="radio" name="q22" value="5"> 1日1杯</label><label><input type="radio" name="q22" value="6"> 1日2杯</label><label><input type="radio" name="q22" value="7"> 1日3杯以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-23"><p>カロリーゼロ飲料（砂糖ゼロだが人工甘味料で甘い飲料）をどのくらいの頻度で飲みますか。</p><p class="qsup">1杯 = 150ml程度</p><div class="options"><label><input type="radio" name="q23" value="0"> 飲まなかった</label><label><input type="radio" name="q23" value="1"> 週1杯未満</label><label><input type="radio" name="q23" value="2"> 週1杯</label><label><input type="radio" name="q23" value="3"> 週2-3杯</label><label><input type="radio" name="q23" value="4"> 週4-6杯</label><label><input type="radio" name="q23" value="5"> 1日1杯</label><label><input type="radio" name="q23" value="6"> 1日2杯</label><label><input type="radio" name="q23" value="7"> 1日3杯以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-24"><p>乳製品を食べる/飲むとき、低脂肪や無脂肪の乳製品を選ぶ割合はどのくらいですか。</p><div class="options"><label><input type="radio" name="q24" value="0"> 低/無脂肪は選ばなかった</label><label><input type="radio" name="q24" value="1"> 2割未満</label><label><input type="radio" name="q24" value="2"> 2割以上〜5割未満</label><label><input type="radio" name="q24" value="3"> 5割以上〜8割未満</label><label><input type="radio" name="q24" value="4"> 8割以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-25"><p>甘い加工食品をどのくらいの頻度で食べますか。</p><p class="qsup">例: クッキー、マフィン、プリン、ケーキ、和菓子、アイスクリーム、プロテインバー、チョコなど</p><div class="options"><label><input type="radio" name="q25" value="0"> 食べなかった</label><label><input type="radio" name="q25" value="1"> 週1回未満</label><label><input type="radio" name="q25" value="2"> 週1回</label><label><input type="radio" name="q25" value="3"> 週2-3回</label><label><input type="radio" name="q25" value="4"> 週4-6回</label><label><input type="radio" name="q25" value="5"> 1日1回</label><label><input type="radio" name="q25" value="6"> 1日2回</label><label><input type="radio" name="q25" value="7"> 1日3回以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-26"><p>しょっぱい加工食品をどのくらいの頻度で食べますか。</p><p class="qsup">例: ポテチ、せんべい、ナゲット、揚げ物など</p><div class="options"><label><input type="radio" name="q26" value="0"> 食べなかった</label><label><input type="radio" name="q26" value="1"> 週1回未満</label><label><input type="radio" name="q26" value="2"> 週1回</label><label><input type="radio" name="q26" value="3"> 週2-3回</label><label><input type="radio" name="q26" value="4"> 週4-6回</label><label><input type="radio" name="q26" value="5"> 1日1回</label><label><input type="radio" name="q26" value="6"> 1日2回</label><label><input type="radio" name="q26" value="7"> 1日3回以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-27"><p>カップラーメン（普通サイズ1個）をどのくらいの頻度で食べますか。</p><div class="options"><label><input type="radio" name="q27" value="0"> 食べなかった</label><label><input type="radio" name="q27" value="1"> 週1回未満</label><label><input type="radio" name="q27" value="2"> 週1回</label><label><input type="radio" name="q27" value="3"> 週2-3回</label><label><input type="radio" name="q27" value="4"> 週4-6回</label><label><input type="radio" name="q27" value="5"> 1日1回</label><label><input type="radio" name="q27" value="6"> 1日2回</label><label><input type="radio" name="q27" value="7"> 1日3回以上</label></div>
+</div>
+<hr>
+<div class="question" id="question-28"><p>カップ焼きそば（普通サイズ1個）をどのくらいの頻度で食べますか。</p><div class="options"><label><input type="radio" name="q28" value="0"> 食べなかった</label><label><input type="radio" name="q28" value="1"> 週1回未満</label><label><input type="radio" name="q28" value="2"> 週1回</label><label><input type="radio" name="q28" value="3"> 週2-3回</label><label><input type="radio" name="q28" value="4"> 週4-6回</label><label><input type="radio" name="q28" value="5"> 1日1回</label><label><input type="radio" name="q28" value="6"> 1日2回</label><label><input type="radio" name="q28" value="7"> 1日3回以上</label></div>
+</div>
+<hr>
+
+      <!-- Navigation Buttons -->
+      <div class="navigation-buttons">
+        <button type="button" id="prev-button-2">Previous Questions</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
